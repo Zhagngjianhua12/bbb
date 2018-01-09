@@ -1,0 +1,9 @@
+<Context>
+<!--
+maxIdleSwap(最大不活动时间):1 session如果1分钟没有使用 就序列化.
+directory:序列化后 文件所保存的路径文件夹.
+-->
+<Manager className="org.apache.catalina.session.PersistentManager" maxIdleSwap="1">
+<Store className="org.apache.catalina.session.FileStore" directory="f:/a"/>
+</Manager>
+</Context>
